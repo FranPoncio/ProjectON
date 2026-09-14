@@ -17,6 +17,20 @@ foto aprobada del plan en vez de contra el plan de ayer.
 Esa es la vara para cualquier decisión de diseño: **si no ayuda a responder
 "¿cómo viene esto contra lo que prometimos?", probablemente no va.**
 
+## Estado
+
+Lo construido y lo que falta está en el Roadmap del README, que se mantiene
+al día. Al cierre de la última sesión: el motor, el tablero, la línea base
+congelada, el Earned Schedule, los imports por CSV, la WBS jerárquica, los
+umbrales por etapa y el asistente están hechos. Quedan dos cosas:
+
+- **Sincronización multi-dispositivo**: la arquitectura está (`SyncAdapter`),
+  falta el servidor real. Este entorno estático no lo despliega.
+- **Notificación a Slack** cuando un paquete cruza a desvío. Sin empezar.
+
+**Al terminar una sesión, actualizá estas líneas.** Es lo que evita que la
+próxima tenga que deducir dónde quedó todo.
+
 ## Dónde está cada cosa
 
 ```
