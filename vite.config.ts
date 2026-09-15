@@ -2,7 +2,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// PMTool corre bajo /pmtool/ para poder convivir con el otro proyecto del repo.
+// Rutas relativas: la app anda igual en la raiz del dominio o colgando de
+// una subcarpeta, sin recompilar. (Antes aca decia que corria bajo /pmtool/,
+// que es justo lo contrario de lo que hace `base: './'`.)
 export default defineConfig({
   base: './',
   plugins: [react()],

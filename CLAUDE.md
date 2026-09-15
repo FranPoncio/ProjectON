@@ -50,10 +50,15 @@ docs/              GUIA-DE-USO.md, ASISTENTE-IA.md, BACKEND-API.md, media/
 ```bash
 npm install
 npm run dev
-npm test          # vitest — 15 archivos de test
+npm test          # vitest — 15 archivos, 141 tests
 npm run typecheck
 npm run build
 ```
+
+**`npm run lint` está roto y no lo arregles de paso.** El script existe en
+package.json pero el repo no tiene configuración de ESLint —ni flat config ni
+`.eslintrc`— así que falla siempre. No pierdas tiempo con eso: o se agrega la
+config como tarea propia, o se saca el script.
 
 ## Lo que hay que saber antes de tocar
 
